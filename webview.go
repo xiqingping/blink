@@ -124,6 +124,10 @@ func (view *WebView) processMessage(msg *win.MSG) bool {
 	return true
 }
 
+func (view *WebView) GetWindowHandle() win.HWND {
+	return view.handle;
+}
+
 func (view *WebView) MoveToCenter() {
 	var width int32 = 0
 	var height int32 = 0
